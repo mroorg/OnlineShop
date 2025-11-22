@@ -1,0 +1,23 @@
+{
+  "name": "onlineshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:sass":"sass style.scss style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mroorg/OnlineShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mroorg/OnlineShop/issues"
+  },
+  "homepage": "https://github.com/mroorg/OnlineShop#readme",
+  "dependencies": {
+    "sass": "^1.94.0"
+  }
+}
