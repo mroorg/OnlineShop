@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فروشگاه تستی</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg shadow-sm">
-       
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">فروشگاه تستی</a>
+            <div class="form d-none d-lg-flex flex-lg-row d-md-flex flex-md-row gap-1">
+                <input type="search" class="form-control" placeholder="جستجو کنید...">
+                <button class="btn">جستجو</button>
+            </div>
+            <div class="d-none d-lg-flex flex-lg-row d-md-flex flex-md-row  gap-5 item-nav">
+
+                <a href="#" class="nav-link"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#" class="nav-link"> <i class="fas fa-home"></i></a>
+                <a href="#" class="nav-link"><i class="fas fa-phone"></i></a>
+            </div>
+            <i class="fa fa-bars fs-4 d-lg-none d-md-none"></i>
+
+        </div>
     </nav>
+    <div class="basketshop vh-100 shadow-sm position-fixed top-0 end-0 p-3 mt-5 d-lg-none d-md-none">
+        <div class="d-flex flex-column d-lg-none d-md-none  gap-5 item-nav">
+            
+            <div>
+                <a href="#" class="nav-link"><i class="fa fa-shopping-cart"></i></a>
+                  سبد خرید
+            </div>
+            <div>
+                <a href="#" class="nav-link"> <i class="fas fa-home"></i></a>
+                  خانه
+            </div>
+            <div>
+             
+                <a href="#" class="nav-link"><i class="fas fa-phone"></i></a>
+               
+                  ارتباط
+            </div>
+            
+        </div>
+
+        <div class="form d-flex flex-row d-lg-none d-md-none mt-3 gap-2">
+            <input type="search" class="form-control" placeholder="جستجو کنید...">
+            <button class="btn">جستجو</button>
+        </div>
+    </div>
+
 </body>
 <script src="/assets/js/bootstrap.bundle.min.js"></script>
 <script src="/assets/js/scripts.js"></script>
+
 </html>

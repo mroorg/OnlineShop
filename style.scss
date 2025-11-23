@@ -1,8 +1,79 @@
-$color-nav-foot:#D3DAD9;
-
+$color-nav-foot:#9ECAD6;
+$icon-shop-color:#1A3D64;
 body{
     direction: rtl;
 }
 nav{
     background-color:$color-nav-foot;
 }
+
+.fa-search{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.fa-search:hover{
+    transform: scale(1.08);
+     text-shadow: 0 0 4px white;
+}
+
+.btn-nav-item{
+    border: 1px solid #16476A;
+    border-radius: 8px;  
+    padding: 0.6rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    
+
+    
+}
+
+.btn-nav-item:hover{
+    background-color:$icon-shop-color;
+    color: white
+
+}
+
+.item-nav i{
+    @extend .fa-search,.btn-nav-item;
+
+    color:$icon-shop-color;
+    font-size:15px;
+    
+   
+}
+
+.item-nav div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.btn{
+    @extend .btn-nav-item;
+    padding: 0.4rem 1rem;
+    font-size: 15px;
+    background-color:$icon-shop-color;
+    color: white;
+}
+
+.fa-bars,.fa-xmark{
+    color:#435663;
+   
+   
+}
+
+.basketshop{
+    z-index: 1000;
+    width: 300px;
+    background-color:$color-nav-foot;
+    transform: translateX(-100%);
+    transition: all 0.4s;
+ 
+}
+
+.activeBasket{
+   transform: translateX(0);
+}
+
