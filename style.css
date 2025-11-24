@@ -18,7 +18,7 @@ nav {
   text-shadow: 0 0 4px white;
 }
 
-.btn-nav-item, .btn, .item-nav i {
+.btn-nav-item, .btn, .item-nav i, .btn-main-item {
   border: 1px solid #16476A;
   border-radius: 8px;
   padding: 0.6rem 1.2rem;
@@ -26,7 +26,18 @@ nav {
   justify-content: center;
 }
 
-.btn-nav-item:hover, .btn:hover, .item-nav i:hover {
+.btn-main-item {
+  transition: all 0.4s;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-nav-item:hover, .btn:hover, .item-nav i:hover, .btn-main-item:hover {
   background-color: #1A3D64;
   color: white;
 }
@@ -40,6 +51,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: #1A3D64;
   gap: 20px;
 }
 
@@ -54,7 +66,7 @@ nav {
   color: #435663;
 }
 
-.basketshop {
+.hambermenu {
   z-index: 1000;
   width: 300px;
   background-color: #9ECAD6;
@@ -62,8 +74,35 @@ nav {
   transition: all 0.4s;
 }
 
-.activeBasket {
+.activehamber {
   transform: translateX(0);
+}
+
+.card {
+  margin: 100px auto;
+}
+.card div {
+  background-color: white;
+  border: none;
+}
+.card div img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.basketshop {
+  width: 300px;
+  z-index: 1000;
+}
+
+.basketshop div .h3, .basketshop div .fa-close {
+  color: #1A3D64;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.basketshop .fa-close:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
