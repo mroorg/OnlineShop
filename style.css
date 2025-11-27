@@ -18,7 +18,7 @@ nav {
   text-shadow: 0 0 4px white;
 }
 
-.btn-nav-item, .btn, .item-nav i, .btn-main-item {
+.btn-nav-item, .btn_, .item-nav i, .btn-main-item {
   border: 1px solid #16476A;
   border-radius: 8px;
   padding: 0.6rem 1.2rem;
@@ -37,7 +37,7 @@ nav {
   margin: 0 auto;
 }
 
-.btn-nav-item:hover, .btn:hover, .item-nav i:hover, .btn-main-item:hover {
+.btn-nav-item:hover, .btn_:hover, .item-nav i:hover, .btn-main-item:hover {
   background-color: #1A3D64;
   color: white;
 }
@@ -55,7 +55,7 @@ nav {
   gap: 20px;
 }
 
-.btn {
+.btn_ {
   padding: 0.4rem 1rem;
   font-size: 15px;
   background-color: #1A3D64;
@@ -92,8 +92,14 @@ nav {
 }
 
 .basketshop {
-  width: 300px;
+  width: 400px;
   z-index: 1000;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+}
+
+.activebasket {
+  transform: translateX(0) !important;
 }
 
 .basketshop div .h3, .basketshop div .fa-close {
@@ -103,6 +109,10 @@ nav {
 }
 .basketshop .fa-close:hover {
   transform: scale(1.1);
+}
+
+.basketshop .emptybox div {
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

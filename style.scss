@@ -64,7 +64,7 @@ nav{
     color:$icon-shop-color;
     gap: 20px;
 }
-.btn{
+.btn_{
     @extend .btn-nav-item;
     padding: 0.4rem 1rem;
     font-size: 15px;
@@ -106,8 +106,14 @@ nav{
 }
 
 .basketshop{
-    width: 300px;
+    width:400px;
     z-index: 1000;
+    transform:translateX(-100%);
+    transition:all 0.4s;
+}
+
+.activebasket{
+    transform: translateX(0) !important;
 }
 
 .basketshop{
@@ -124,3 +130,12 @@ nav{
     }
         
 }
+
+.basketshop{
+    .emptybox{
+        div{
+            font-size:25px;
+        }
+    }
+}
+
